@@ -1,20 +1,37 @@
-Este código hace parte de un conjunto de herramientas
-para descrifrar el texto del puzzle Coinmonks
-link: https://medium.com/coinmonks/securing-bitcoin-seed-phrases-in-stories-d8eb43a02254
+# REFERENCIA
+
+
+El cifrado Trithemius es un método de cifrado polialfabético inventado
+por Johannes Trithemius en el Renacimiento. Utiliza una tabla llamada "tabula recta"
+que contiene el alfabeto desplazado varias veces. Cada letra del mensaje original se
+sustituye por otra letra de la tabla, siguiendo un patrón determinado.
+Este cifrado fue un avance importante en la criptografía de la época, ya que
+dificultaba el descifrado de mensajes al usar múltiples alfabetos.
+
+# PUZZLE COINMONKS
+Post: https://medium.com/coinmonks/securing-bitcoin-seed-phrases-in-stories-d8eb43a02254
+
 Wallet objetivo: https://mempool.space/es/address/1K4ezpLybootYF23TM4a8Y4NyP7auysnRo
-Saldo: ‎0.03124630 BTC
+* Saldo: ‎0.03124630 BTC
 -----------------------------------------------
-Un simple codigo, basado en el cifrado Trithemius
-El archivo de texto contiene por linea el texto  a descifrar
-use simplemente la siguiente linea para ejecutar
+
+# EJECUTAR
+
+En la ventana de comando copie la siguiente linea para ejecutar
+```
 python trithemius.py encrypted_text.txt REVOLUTION
+```
+- Agrege al final la "Palabra Clave" para que se cree la Tabula Trithemius.
+- Modifique el "encrypted_text.txt" y agrege el texto a desencriptar.
+- El archivo de texto contiene por linea el texto a descifrar.
+  
+# FUNCIONES
 
-Funciones:
-
-Eliminación de signos de puntuación y caracteres especiales:
-Se utiliza la expresión regular r'[^\w\s]' para eliminar todo lo que no sea una letra, número o espacio en blanco.
-Se utiliza una segunda expresión regular r'[áéíóúÁÉÍÓÚ]' para eliminar los acentos.
-Conteo de caracteres: Se calcula la longitud de la línea limpia (cleaned_line) y se muestra al final de cada línea junto con el texto descifrado y resaltado.
-Encuentra todas las palabras (secuencias de letras) utilizando la expresión regular \b[A-Za-z]+\b.
-Resalta las palabras encontradas en rojo utilizando códigos ANSI.
-Imprime la línea resaltada en la terminal.
+- Eliminación de signos de puntuación y caracteres especiales:
+- Se utiliza la expresión regular r'[^\w\s]' para eliminar todo lo que no sea una letra, número o espacio en blanco.
+- Se utiliza una segunda expresión regular r'[áéíóúÁÉÍÓÚ]' para eliminar los acentos.
+- Conteo de caracteres: Se calcula la longitud de la línea limpia (cleaned_line) y se muestra al final de cada línea junto con el texto descifrado y resaltado.
+- Encuentra todas las palabras (secuencias de letras) utilizando la expresión regular \b[A-Za-z]+\b.
+- Resalta las palabras encontradas en ROJO utilizando códigos ANSI.
+- Imprime la línea resaltada en la terminal.
+- En la terminal puede ver el resultado en letra capital.
