@@ -36,7 +36,9 @@ ser más complejo, utilizando claves y patrones de desplazamiento más elaborado
 
 
 # PUZZLE COINMONKS
+
 Post: https://medium.com/coinmonks/securing-bitcoin-seed-phrases-in-stories-d8eb43a02254
+- La frase semilla de la wallet se encuentra oculta en el articulo.
 
 Wallet objetivo: https://mempool.space/es/address/1K4ezpLybootYF23TM4a8Y4NyP7auysnRo
 * Saldo: ‎0.03124630 BTC
@@ -62,3 +64,10 @@ python trithemius.py encrypted_text.txt REVOLUTION
 - Resalta las palabras encontradas en ROJO utilizando códigos ANSI.
 - Imprime la línea resaltada en la terminal.
 - En la terminal puede ver el resultado en letra capital.
+
+# SUGERENCIAS Y CONTACTO
+- t.me/vortomastro
+
+# APOYO Y DONACIONES
+- BTC: bc1q3228g2cv73agw2xnfxvplaavepvwa2dl0ne9sm
+
