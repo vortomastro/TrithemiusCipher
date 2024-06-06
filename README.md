@@ -1,12 +1,39 @@
 # REFERENCIA
 
-
 El cifrado Trithemius es un método de cifrado polialfabético inventado
 por Johannes Trithemius en el Renacimiento. Utiliza una tabla llamada "tabula recta"
 que contiene el alfabeto desplazado varias veces. Cada letra del mensaje original se
 sustituye por otra letra de la tabla, siguiendo un patrón determinado.
 Este cifrado fue un avance importante en la criptografía de la época, ya que
 dificultaba el descifrado de mensajes al usar múltiples alfabetos.
+
+# EJEMPLO PRÁCTICO
+
+Este ejemplo básico ilustra el principio de sustitución polialfabética utilizado el cifrado Trithemius.
+
+Imaginemos que tenemos la siguiente tabla, llamada "tabula recta":
+```
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+BCDEFGHIJKLMNOPQRSTUVWXYZA
+CDEFGHIJKLMNOPQRSTUVWXYZAB
+DEFGHIJKLMNOPQRSTUVWXYZABC
+...
+```
+Cada fila es el alfabeto desplazado una posición respecto a la anterior.
+
+Ahora, queremos cifrar el mensaje "HOLA". Para ello, usamos la primera fila
+para la primera letra, la segunda fila para la segunda, y así sucesivamente.
+
+- H se convierte en I (primera fila).
+- O se convierte en P (segunda fila).
+- L se convierte en M (tercera fila).
+- A se convierte en B (cuarta fila).
+  
+Por lo tanto, el mensaje cifrado sería "IPMB".
+
+Este es un ejemplo simplificado, en la práctica el cifrado Trithemius puede 
+ser más complejo, utilizando claves y patrones de desplazamiento más elaborados. 
+
 
 # PUZZLE COINMONKS
 Post: https://medium.com/coinmonks/securing-bitcoin-seed-phrases-in-stories-d8eb43a02254
